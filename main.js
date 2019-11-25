@@ -8,9 +8,19 @@
 // il selector per il menu che deve apparire:   .hamburger-menu
 // il selector per la X che deve chiudere .hamburger-menu:    .close
 
+// $('.header-right > a').click(function(){
+//     $('.hamburger-menu').show();
+// });
+// $('.close').click(function(){
+//     $('.hamburger-menu').hide();
+// });
+
+
+// Stessa soluzione, ma lavorando con la classe .active già presente nella @media del foglio di stile
+// grazie Luca per l'indicazione
 $('.header-right > a').click(function(){
-    $('.hamburger-menu').show();
+    $('.hamburger-menu').addClass('active');
 });
 $('.close').click(function(){
-    $('.hamburger-menu').hide();
+    $('.hamburger-menu').removeClass('active');
 });
